@@ -5,8 +5,29 @@
 
 .movie-table-container {
     width: calc(100vw - 200px);
-    height: calc(100vh -50px);
+    height: calc(100vh - 50px);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.movie-search {
+    height: 30px;
+    width: calc(100vw - 600px);
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.filters {
+    display: flex;
+}
+
+.rating-dropdown {
+    margin-left: 15px;
+    height: 30px;
+    width: 100px;
 }

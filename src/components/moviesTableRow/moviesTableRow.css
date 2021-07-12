@@ -1,7 +1,8 @@
 .movies-table-row {
     display: flex;
-    height: 40px;
-    border: 1px solid gray;
+    height: 16.66%;
+    /* height in percentage gives how many movies name u want in table */
+    border-bottom: 1px solid lightgray;
 }
 
 .column {
@@ -9,4 +10,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-right: 1px solid lightgray;
 }

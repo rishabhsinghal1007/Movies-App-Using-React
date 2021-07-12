@@ -9,18 +9,22 @@ class MoviesTable extends React.Component {
     }
 
     render() {
-        let data = {
-            sno: 1,
-            name: "P.K",
-            genre: "Comedy",
-            rating: "Very Good"
+        let data = this.props.data;
+        let header = {
+            sno: "S.No",
+            name: "Movie Name",
+            genre: "Genre",
+            rating: "Rating"
+        }
+        let rows = [];
+
+        for (let i of data) {
+            rows.push(<MoviesTableRow key={i.sno} data={i}></MoviesTableRow>);
         }
         return (
             <div className="movies-table">
-                <MoviesTableRow data={data} />
-                <MoviesTableRow data={data} />
-                <MoviesTableRow data={data} />
-                <MoviesTableRow data={data} />
+                <MoviesTableRow data={header} header={true} />
+                {rows}
             </div>
         )
     }
